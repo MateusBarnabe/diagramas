@@ -1,0 +1,13 @@
+bin/
+.classpath
+.project
+.settings/
+*.class
+*.jar
+*.log
+*.csv
+.gradle/
+build/
+.idea/
+*.iml
+.vscode/
