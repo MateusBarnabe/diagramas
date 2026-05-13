@@ -49,4 +49,12 @@ public class Livro {
         this.quantidadeDisponivel = quantidadeDisponivel;
     }
 
+    public void realizarEmprestimo() {
+        if (quantidadeDisponivel > 0) {
+            quantidadeDisponivel--;
+        } else {
+            System.out.println("Livro indisponível para empréstimo.");
+        }
+    }
+
 }

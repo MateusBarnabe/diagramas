@@ -1,5 +1,5 @@
 package biblioteca.dominio;
 
-public class SituacaoUsuario {
-    
+public enum SituacaoUsuario {
+    ATIVO, INATIVO
 }

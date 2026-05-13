@@ -1,5 +1,5 @@
 package biblioteca.dominio;
 
-public class SituacaoEmprestimo {
-    
+public enum SituacaoEmprestimo {
+    EMPRESTADO, DEVOLVIDO, ATRASADO
 }
