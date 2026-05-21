@@ -5,8 +5,19 @@ import java.util.HashMap;
 import biblioteca.dominio.Usuario;
 
 public class UsuarioRepositorio {
+    private static UsuarioRepositorio instancia;
     private HashMap<Long, Usuario> usuarios = new HashMap<>();
     private Long proximoId = 1L;
+
+    private UsuarioRepositorio() {
+    }
+
+    public static UsuarioRepositorio getInstance() {
+        if (instancia == null) {
+            instancia = new UsuarioRepositorio();
+        }
+        return instancia;
+    }
 
     public void salvar(Usuario usuario) {
         if (usuario.getId() == null) {
